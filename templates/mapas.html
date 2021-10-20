@@ -13,6 +13,7 @@
   <!-- CSS dependencies -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="./static/wireframe.css">
+    <link rel="stylesheet" href="../static/wireframe.css">
 </head>
 
 <body>
@@ -28,28 +29,27 @@
   </div>
   <div class="navbar navbar-dark bg-dark">
     <div class="container d-flex justify-content-between">
-      <a href="#" class="navbar-brand d-flex align-items-center"></i><strong>PokeWikiUCL</strong> </a>
+      <a href="/" class="navbar-brand d-flex align-items-center"></i><strong>PokeWikiUCL</strong> </a>
       <form action="/pokemon">
           <label for="busca">Buscar Pokemon:</label>
           <input type="text" id="busca" name="busca">
           <button type="submit" class="btn btn-default">Buscar</button>
       </form>
-      <form action="/pokemon/mapas">
+
+       <form action="/pokemon/mapas">
            <label for="regiao">Buscar Região:</label>
           <input type="text" id="regiao" name="regiao">
           <button type="submit" class="btn btn-default">Ver Região</button>
       </form>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"> <span class="navbar-toggler-icon"></span> </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"> <span class="navbar-toggler-icon"></span> </button>
     </div>
   </div>
   <div class="text-center py-5">
     <div class="container">
       <div class="row my-5 justify-content-center">
         <div class="col-md-9">
-          <h1>Bem vindo ao PokeWikiUCL! Uma enciclopédia pokemon feita por mim Gabriel de Souza Passos, utilizando a PokeAPI
-              disponibilizada pelo site oficial do pokemon. </h1>
-          <p class="lead text-muted"><img src="https://i.pinimg.com/originals/f8/55/47/f85547cc09fbd80b484f656ea30b7eab.gif" alt="poke-gif" width="150px" height="150px"></p>
+            <h1>{{ nome }}</h1>
+            <img src="{{ mapa }}" alt="{{ nome }}" width=450px" heigth="450px">
         </div>
       </div>
     </div>

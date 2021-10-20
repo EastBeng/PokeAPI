@@ -12,7 +12,7 @@
   <meta name="author" content="Pingendo">
   <!-- CSS dependencies -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="./static/wireframe.css">
+  <link rel="stylesheet" href="../static/wireframe.css">
 </head>
 
 <body>
@@ -34,6 +34,11 @@
           <input type="text" id="busca" name="busca">
           <button type="submit" class="btn btn-default">Buscar</button>
       </form>
+      <form action="/pokemon/mapas">
+           <label for="regiao">Buscar Região:</label>
+          <input type="text" id="regiao" name="regiao">
+          <button type="submit" class="btn btn-default">Ver Região</button>
+      </form>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"> <span class="navbar-toggler-icon"></span> </button>
     </div>
   </div>
@@ -41,7 +46,7 @@
     <div class="container">
       <div class="row my-5 justify-content-center">
         <div class="col-md-9">
-          <h1>Pokemon Não Encontrado!</h1>
+          <h1>Pokemon ou Mapa da Região Não Encontrado!</h1>
           <p class="lead text-muted"><img src="https://c.tenor.com/kjqof9l6gk8AAAAC/pikachu-sad.gif" alt="poke-gif" width="150px" height="150px"></p>
           <a href="/">Voltar a tela inicial</a>
         </div>
