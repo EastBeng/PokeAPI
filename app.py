@@ -28,6 +28,10 @@ def pokemon():
 
         return render_template("TelaErro.html")
 
+@app.route('/pokemon/mapa')
+def mostra_mapa():
+    mapa_kanto= "https://lh6.googleusercontent.com/proxy/yCPrYBpUuJTo3jS9glluiqTcrMoJhURNcArVydwkUBAEatTQj9TRCHg9mPo3U3zrtvl1w2xcFJ8kXzeYLmdQyP1p3oJTpUa9KA=s0-d"
+
 
 if __name__ == '__main__':
     app.run(port=80,debug=True)
